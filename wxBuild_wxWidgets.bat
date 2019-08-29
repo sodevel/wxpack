@@ -530,7 +530,7 @@ echo.
 :: -- Setup the make executable and the actual makefile name --
 set MAKE=mingw32-make.exe
 set MAKEFILE=makefile.gcc
-set FLAGS=CXXFLAGS=-Wno-attributes -j %NUMBER_OF_PROCESSORS% CFLAGS=-m32 CPPFLAGS=-m32 LDFLAGS=-m32 CC="gcc -m32" WINDRES="windres --use-temp-file -F pe-i386"
+set FLAGS=CXXFLAGS="-std=gnu++11 -Wno-attributes" -j %NUMBER_OF_PROCESSORS% CFLAGS=-m32 CPPFLAGS=-m32 LDFLAGS=-m32 CC="gcc -m32" WINDRES="windres --use-temp-file -F pe-i386"
 set COMPILER_VERSION=%MINGW_W64_VER%
 set COMPILER_NAME=mingw
 set COMPILER_ARCH=32
@@ -553,7 +553,7 @@ echo.
 ::set CFG=_x64
 set MAKE=mingw32-make.exe
 set MAKEFILE=makefile.gcc
-set FLAGS=CXXFLAGS=-Wno-attributes -j %NUMBER_OF_PROCESSORS%
+set FLAGS=CXXFLAGS="-std=gnu++11 -Wno-attributes" -j %NUMBER_OF_PROCESSORS%
 set COMPILER_VERSION=%MINGW_W64_64_VER%_x64
 set COMPILER_NAME=mingw
 set COMPILER_ARCH=64
