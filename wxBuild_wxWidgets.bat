@@ -34,7 +34,7 @@
 ::                         to match official releases
 ::**************************************************************************
 setlocal
-set WXBUILD_VERSION=1.19
+set WXBUILD_VERSION=1.19-internal
 set WXBUILD_APPNAME=wxBuild_wxWidgets
 :: MinGW Gcc install location. This must match your systems configuration.
 set GCCDIR=C:\MinGW
